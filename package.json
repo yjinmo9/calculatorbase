@@ -1,0 +1,21 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "nodemon server/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^7.8.3"
+  }
+}

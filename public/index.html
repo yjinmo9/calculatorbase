@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 추가 스타일 */
+        .title {
+            font-size: 2em; /* 계산기의 글씨 크기 */
+            font-weight: bold;
+            text-align: center;
+            margin: 0; /* 불필요한 여백 제거 */
+        }
+        .subtitle {
+            font-size: 1em; /* 진모가 만듬의 글씨 크기 */
+            text-align: center;
+            color: gray; /* 색상을 회색으로 설정 (선택 사항) */
+            margin: 0; /* 불필요한 여백 제거 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 제목 및 부제목 -->
+        <h1 class="title">계산기</h1>
+        <p class="subtitle">진모가 만듬</p>
+        <!-- 입력란과 Answer 버튼 -->
+        <div id="input-container">
+            <input type="text" id="formula-input" placeholder="Enter your formula (e.g., 3+5)" />
+            <button id="answer-btn">Answer</button>
+        </div>
+        <!-- 계산 결과 표시 -->
+        <div id="calc-history" class="history">
+            <h2>*계산 기록*</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

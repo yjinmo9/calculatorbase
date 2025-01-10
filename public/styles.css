@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('./calculator.jpeg'); /* 이미지 경로 */
+  background-size: cover; /* 이미지를 화면에 맞게 확대/축소 */
+  background-position: center; /* 이미지가 화면 중앙에 오도록 설정 */
+  background-repeat: no-repeat; /* 이미지 반복 방지 */
+  height: 100vh; /* 화면 전체 높이 */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* 세로 배치 */
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    font-size: 24px; /* 제목 크기 */
+    margin-bottom: 10px; /* 아래 요소와 간격 */
+}
+
+.footer {
+    font-size: 14px;
+    margin-bottom: 20px; /* 아래 요소와 간격 */
+    color: #555;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+#input-container {
+    margin-top: 20px; /* 위 요소와 간격 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#formula-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#answer-btn {
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#answer-btn:hover {
+    background-color: #0056b3;
+}
+
+.history {
+    display: flex; /* Flexbox */
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    height: 50px; /* 박스 높이 설정 */
+    border: 1px solid #ddd; /* 테두리 추가 */
+    padding: 0; /* 내부 여백 제거 */
+    border-radius: 4px; /* 모서리 둥글게 */
+    background: #f9f9f9; /* 배경색 설정 */
+    margin-top: 20px; /* 위 요소와 간격 추가 */
+    text-align: center; /* 텍스트 중앙 정렬 (보조) */
+}
+
+.history h2 {
+    margin: 0; /* 불필요한 여백 제거 */
+    font-size: 18px; /* 글씨 크기 */
+    font-weight: bold; /* 글씨 두께 */
+    color: #333; /* 글씨 색상 */
+}
